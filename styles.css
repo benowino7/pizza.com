@@ -1,34 +1,70 @@
-nav img {
+.f1 {
     width: 190px;
     height: 50px;
     border-radius: 10%;
-    margin-right: 50%;
+}
+.f2{
+    float: right;
+    width: 190px;
+    height: 50px;
+    border-radius: 10%;
 }
 
-nav {
-    display: flex;
-    position: relative;
+nav{
+    height: auto;
+    overflow: hidden;
+    top:-50%;
+    
+
 
 }
-nav ul{
-    text-align: right;
-    right: 0;
-    top: 0;
+
+nav ul {
+    text-align: center;
 }
 
 nav>ul>li {
-    padding: 1%;
-    margin: 1%;
     list-style: none;
-}
-nav>ul>li>a{
+    padding: 5px;
+    margin-top: absolute;
+    padding: 1%;
+    display: inline-block;
+
 
 }
 
-    @keyframes anm{from{transform: rotate(360deg);} }
-.div{
-    height: 150;
-    width: 150;
-    background-color: aqua;
-    /* animation: anm 4s 1s alternate infinite ease-in-out top; */
+nav>ul>li>a {
+    padding: 5px;
+    margin-right: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* display:block; */
+    color: black;
+    text-transform: uppercase;
 }
+
+nav>ul>li>a:hover {
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.1), inset 0 0 1px rgba(100, 93, 93, 0.6);
+    background:rgb(131, 201, 201);
+    color: rgba(12, 12, 9, 0.7);
+}
+.jumbotron{
+    background-image: url('https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="PizzaShip');
+    background-size: cover;
+    text-align: center;
+}
+
+  .contain{
+      display:flex;
+      overflow: scroll; 
+      padding: 1%;
+
+  }
+  .contain img{
+      height: 250px;
+      width: 250px;
+      border-radius: 20%;
+  }
+  .img{
+    margin: 2%;
+  }
