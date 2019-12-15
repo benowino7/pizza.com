@@ -1,35 +1,21 @@
-div#dtls, div#cart{position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0,0,0,0.8); display: none;}
-button#close, button#closeb{position: fixed; right: 10px; top: 10px; color: #f00; font: 900 2em sans-serif; border-radius: 50%;}
-div#dtls>div{background: #bbbbbb; display: flex; justify-content: space-between; flex-wrap: wrap;max-width: 960px; margin: auto; padding: 3px 7px; border-radius: 0px 0px 7px 7px;}
-div#dtls>div>h2{width: 98%;}
-div#dtls>div>div{max-width: 637px; padding: 3px;}
-div#dtls>div>div:last-of-type{ min-width: calc(100% - 350px);}
-div#dtls>div>div>img{display: block; width: 300px; height: 300px; background: #ffffff;}
-/* div#dtls>div>div>form{} */
-div#dtls>div>div>form>label{display: block;}
-div#cart>div{background: #bbbbbb; max-width: 960px; margin: auto; padding: 3px 7px; border-radius: 0px 0px 7px 7px;}
-div#cart table{width: 100%;}
-div#cart table tr th{border: 3px solid #000000; border-width: 0px 0px 3px 1px; text-transform: uppercase; padding: 1px 3px;}
-div#cart table tr td{border: 1px solid #353535; border-width: 0px 0px 1px 1px; padding: 1px 3px;}
-div#cart table tr td img{min-width: 28px; max-width: 128px; height: 56px; background: #ffffff; display: block;}
-div#cart table tr td button{color: #f00; font: 900 1.4em sans-serif;}
 .f1 {
     width: 190px;
     height: 50px;
     border-radius: 10%;
 }
-.f2{
+
+.f2 {
     float: right;
     width: 190px;
     height: 50px;
     border-radius: 10%;
 }
 
-nav{
+nav {
     height: auto;
     overflow: hidden;
-    top:-50%;
-    
+    top: -50%;
+
 
 
 }
@@ -60,43 +46,48 @@ nav>ul>li>a {
 
 nav>ul>li>a:hover {
     box-shadow: 0 0 10px rgba(17, 17, 17, 0.1), inset 0 0 1px rgba(100, 93, 93, 0.6);
-    background:rgb(131, 201, 201);
+    background: rgb(131, 201, 201);
     color: rgba(12, 12, 9, 0.7);
 }
-.jumbotron{
+
+.jumbotron {
     background-image: url('https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="PizzaShip');
     background-size: cover;
     text-align: center;
 }
 
-  .contain{
-      display:flex;
-      overflow: scroll; 
-      padding: 1%;
+.contain {
+    display: flex;
+    overflow: scroll;
+    padding: 1%;
 
-  }
-  .contain img{
-      height: 250px;
-      width: 250px;
-      border-radius: 20%;
-  }
-  .img{
+}
+
+.contain img {
+    height: 250px;
+    width: 250px;
+    border-radius: 20%;
+}
+
+.img {
     margin: 2%;
     text-align: center;
     /* border: 1px solid #808080; width: 252px; height: 344px; background: #eeeeee; */
-  }
-  /* .img h6{width: 250px; height: 21px; border: 1px solid #707070;}
+}
+
+/* .img h6{width: 250px; height: 21px; border: 1px solid #707070;}
   .img button{min-width: 92px; min-height: 28px; border: 1px solid #707070;} */
-  .bg{
-      background-color: rgb(208, 219, 228);
-      height: 100px;
-      text-align: center;
-      left: 0%;
-      bottom: 0%;
-      right: 0%;
-      padding: 2%;
-  }
-  .contacts {
+.bg {
+    background-color: rgb(208, 219, 228);
+    height: 100px;
+    text-align: center;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    padding: 2%;
+}
+
+.contacts {
     text-align: center;
     background-image: url('https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="PizzaShip');
     /* background-repeat: no-repeat; */
@@ -120,7 +111,7 @@ input {
 }
 
 input::placeholder {
-    color:black;
+    color: black;
 }
 
 #text {
@@ -151,4 +142,97 @@ input::placeholder {
 
 button {
     margin: 2%;
+}
+div#dtls,
+div#cart ,#buy{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+button#close,
+button#closeb {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: #f00;
+    font: 900 2em sans-serif;
+    border-radius: 50%;
+}
+
+div#dtls>div,#buy>div {
+    background: #bbbbbb;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: auto;
+    padding: 3px 7px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+div#dtls>div>h2,#buy>div>h3 {
+    width: 98%;
+}
+
+div#dtls>div>div {
+    max-width: 637px;
+    padding: 3px;
+}
+
+div#dtls>div>div:last-of-type {
+    min-width: calc(100% - 350px);
+}
+
+div#dtls>div>div>img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+}
+
+div#dtls>div>div>form>label {
+    display: block;
+}
+
+div#cart>div {
+    background: #bbbbbb;
+    max-width: 960px;
+    margin: auto;
+    padding: 3px 7px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+div#cart table {
+    width: 100%;
+}
+
+div#cart table tr th {
+    border: 3px solid #000000;
+    border-width: 0px 0px 3px 1px;
+    text-transform: uppercase;
+    padding: 1px 3px;
+}
+
+div#cart table tr td {
+    border: 1px solid #353535;
+    border-width: 0px 0px 1px 1px;
+    padding: 1px 3px;
+}
+
+div#cart table tr td img {
+    min-width: 28px;
+    max-width: 128px;
+    height: 56px;
+    background: #ffffff;
+    display: block;
+}
+
+div#cart table tr td button {
+    color: #f00;
+    font: 900 1.4em sans-serif;
 }
