@@ -6,7 +6,7 @@ function _p(a){return a.preventDefault();}
 
 var globVarA;
 
-//  function tmpImgs(){for(var a= (_t('img').length - 1); a>6; a--){_t('img')[a].src="img/favicon.jpeg";}} tmpImgs();
+  function tmpImgs(){for(var a= (_t('img').length - 1); a>6; a--){_t('img')[a].src="img/favicon.jpeg";}} tmpImgs();
 
 _i("close").addEventListener('click', function(){this.removeEventListener('click', customize); _i('dtls').style.display="none";});
 _i("closeb").addEventListener('click', function(){this.removeEventListener('click', customize); _i('cart').style.display="none";});
@@ -122,3 +122,6 @@ function checkEmpty() {
         document.getElementById('results').innerHTML = "Dear " + name + " your message was received successfully you will be contacted soon. Thank you.";
     }
 }
+_i('conta').addEventListener('click',function(){
+    _i('contac').style.display="block";
+});
