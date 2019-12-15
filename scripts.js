@@ -6,7 +6,7 @@ function _p(a){return a.preventDefault();}
 
 var globVarA;
 
-  function tmpImgs(){for(var a= (_t('img').length - 1); a>6; a--){_t('img')[a].src="img/favicon.jpeg";}} tmpImgs();
+  //function tmpImgs(){for(var a= (_t('img').length - 1); a>6; a--){_t('img')[a].src="img/favicon.jpeg";}} tmpImgs();
 
 _i("close").addEventListener('click', function(){this.removeEventListener('click', customize); _i('dtls').style.display="none";});
 _i("closeb").addEventListener('click', function(){this.removeEventListener('click', customize); _i('cart').style.display="none";});
@@ -41,6 +41,10 @@ function dtlChange()
     a=parseFloat(qnty()); b=parseFloat(ram()); c=parseFloat(storage()); d=parseFloat(cpu()); e=parseFloat(display());
     _i('dtlsPrice').innerText=a*(globVarA+b+c+d+e);
     //alert(globVarA + 'glob' + a + 'qnty' + b + 'ram' + c + 'storage' + d + 'cpu' + e + 'display');
+}
+function buy(){
+    _i("buyBtn").addEventListener('click', function(){this.removeEventListener('click', customize);
+    _i('dtls').style.display="none"; _i('buy').style.display="block";});
 }
 
 function qnty()
