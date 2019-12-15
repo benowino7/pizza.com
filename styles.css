@@ -106,7 +106,7 @@ nav>ul>li>a:hover {
     right: 0;
     color: black;
     margin-top: 1%;
-
+    display: none;
 
 }
 
