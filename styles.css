@@ -96,3 +96,59 @@ nav>ul>li>a:hover {
       right: 0%;
       padding: 2%;
   }
+  .contacts {
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="PizzaShip');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 80%;
+    left: 0;
+    right: 0;
+    color: black;
+    margin-top: 1%;
+
+
+}
+
+input {
+    margin: 3%;
+    background-color: transparent;
+    width: 350px;
+    z-index: 1;
+    border: solid 3px black;
+    color: black;
+}
+
+input::placeholder {
+    color:black;
+}
+
+#text {
+    height: 200px;
+    width: 65%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    z-index: 1;
+    border: solid 2px black;
+    color: black;
+}
+
+#text::placeholder {
+    color: black;
+}
+
+#icons {
+    text-align: center;
+    margin-top: 1%;
+}
+
+/* #p,
+#p1,
+#p2 {
+    display: none;
+} */
+
+button {
+    margin: 2%;
+}
