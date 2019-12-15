@@ -8,6 +8,72 @@
     <title>PizzaShip.com</title>
 </head>
 <body>
+        <div id="dtls">
+                <button id="close">X</button>
+              <div>
+                <h2 id="dtlsName">Product Name</h2> 
+                <div><img id="dtlsImg" src="" alt="Product image"></div>
+                <div>
+                  <form name="dtls">
+                    <label>Quantity <input type="number"/></label>
+                    <label>Pizza Size 
+                      <select>
+                            <option value="1">0.5kg small</option>
+                            <option value="2">1kg medium</option>
+                            <option value="3">1.5kg medium</option>
+                            <option value="4">1.75kg large</option>
+                            <option value="5">2kg large</option>
+                      </select>
+                    </label>
+                    <label>Crust Type 
+                      <select>
+                            <option value="1">cripsy</option>
+                            <option value="2">stuffed</option>
+                            <option value="3">gluten-free</option>
+                            <option value="4">gluten</option>
+                            <option value="5">flieded</option>
+                      </select>
+                    </label>
+                    <label>Toppings
+                      <select>
+                            <option value="1">fruity</option>
+                            <option value="2">onioned</option>
+                            <option value="3">cheese</option>
+                            <!-- <option value="4"></option>
+                            <option value="5"></option> -->
+                      </select>
+                    </label>
+                    <label>Shape 
+                      <select>
+                            <option value='1'>round</option>
+                            <option value='2'>oval</option>
+                            <option value='3'>rectangular</option>
+                            <option value='4'>cubed</option>
+                            <option value='5'>triangular</option>
+                            <!-- <option value='6'>15" 4k no touch</option> -->
+                      </select>
+                    </label>
+                </form>
+                <h3>KES <span id="dtlsPrice">0</span>.00 </h3>
+                <button id="addCartBtn">Add to Cart</button>
+                <button id="buyBtn">Buy</button>
+                <button id="viewCart">View Cart</button>
+            </div> </div></div>
+        
+            <div id="cart">
+                  <button id="closeb">X</button>
+                  <div>
+                    <h2>CART</h2> 
+                    <table>
+                            <tr><th>Image</th><th>Name</th><th>Quantity</th><th>Price</th><th>Remove</th></tr>
+                            <tr><td><img src=""/></td><td>Name</td><td><input type="number" class="qnty"></td><td>KES <span>0</span>.00</td><td><button class="remove">X</td></tr>
+                            <tr><td><img src=""/></td><td>Name</td><td><input type="number" class="qnty"></td><td>KES <span>0</span>.00</td><td><button class="remove">X</td></tr>
+                            <tr><td><img src=""/></td><td>Name</td><td><input type="number" class="qnty"></td><td>KES <span>0</span>.00</td><td><button class="remove">X</td></tr>
+                            <tr><td><img src=""/></td><td>Name</td><td><input type="number" class="qnty"></td><td>KES <span>0</span>.00</td><td><button class="remove">X</td></tr>
+                    </table>
+                  </div>
+            </div>
+        
     <nav>
         <img class="f1" src="https://images.pexels.com/photos/1596888/pexels-photo-1596888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pizzashop.com">
         <img class="f2" src="https://images.pexels.com/photos/1596888/pexels-photo-1596888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pizzashop.com" alt="">
@@ -19,48 +85,38 @@
         </ul>
     </nav>
     <div class="jumbotron">
-       <h1> PizzaShip.com in town! Order now & Enjoy amazing Discounts</h1> 
+       <h1> PizzaShip.com all over town! Order now & Enjoy amazing Discounts</h1> 
     </div>
-<div class="container">
+<div class="v">
     <div class="contain">
             <div class="img">
                 <h4>Margherita</h4>
                 <img src="https://images.pexels.com/photos/2260200/pexels-photo-2260200.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1600</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Bismack</h4>
                 <img src="https://images.pexels.com/photos/1069450/pexels-photo-1069450.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1800</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Marinara</h4>
                 <img src="https://images.pexels.com/photos/1435900/pexels-photo-1435900.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1500</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Americana</h4>
                 <img src="https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1600</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Mimosa</h4>
                 <img src="https://images.pexels.com/photos/162744/tomatoes-tomato-quiche-red-yellow-162744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1800</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
     </div>
@@ -69,24 +125,18 @@
                 <h4>Napoletana</h4>
                 <img src="https://images.pexels.com/photos/1552635/pexels-photo-1552635.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.2000</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Fattoria</h4>
                 <img src="https://images.pexels.com/photos/1435903/pexels-photo-1435903.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1200</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Valtellina</h4>
                 <img src="https://images.pexels.com/photos/166451/pexels-photo-166451.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1800</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             
@@ -94,19 +144,48 @@
                 <h4>Frutti di mare</h4>
                 <img src="https://images.pexels.com/photos/2471171/pexels-photo-2471171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1200</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
             <div class="img">
                 <h4>Garbonara</h4>
                 <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <h6>price: Ksh.1000</h6>
-                <button>Add to cart</button>
-                <button>Buy</button>
                 <button>customize</button>
             </div>
     </div>
+    <div class="contain">
+        <div class="img">
+            <h4>Napoletana</h4>
+            <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            <h6>price: Ksh.2000</h6>
+            <button>customize</button>
+        </div>
+        <div class="img">
+            <h4>Fattoria</h4>
+            <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            <h6>price: Ksh.1200</h6>
+            <button>customize</button>
+        </div>
+        <div class="img">
+            <h4>Valtellina</h4>
+            <img src="https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            <h6>price: Ksh.1800</h6>
+            <button>customize</button>
+        </div>
+        
+        <div class="img">
+            <h4>Frutti di mare</h4>
+            <img src="https://images.pexels.com/photos/2471171/pexels-photo-2471171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            <h6>price: Ksh.1200</h6>
+            <button>customize</button>
+        </div>
+        <div class="img">
+            <h4>Garbonara</h4>
+            <img src="https://images.pexels.com/photos/2741457/pexels-photo-2741457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            <h6>price: Ksh.1000</h6>
+            <button>customize</button>
+        </div>
+</div>
    
 
 </div>
