@@ -33,8 +33,16 @@ function customize()
     _i('dtlsPrice').innerText = globVarA;
     _f('dtls')[0].value=1;
     for(c=0; c<_f('dtls').length; c++){_f('dtls')[c].addEventListener('change', dtlChange);}
+}
+function dtlChange()
+{
+    var a,b,c,d,e,f;
+    a=parseFloat(qnty()); b=parseFloat(ram()); c=parseFloat(storage()); d=parseFloat(cpu()); e=parseFloat(display());
+    _i('dtlsPrice').innerText=a*(globVarA+b+c+d+e);
+    f=_i('dtlsPrice').innerText=a*(globVarA+b+c+d+e);
+    //alert(globVarA + 'glob' + a + 'qnty' + b + 'ram' + c + 'storage' + d + 'cpu' + e + 'display');
     _i('buyBtn').addEventListener('click',function(){
-        alert("Grand Tota:Ksh "+d);
+        alert("Grand Tota:Ksh "+f);
         if(true){
         confirm("Do you want it delivered? Remember that cost depend on location");
             prompt('Enter location');
@@ -43,13 +51,6 @@ function customize()
         
     
     });
-}
-function dtlChange()
-{
-    var a,b,c,d,e;
-    a=parseFloat(qnty()); b=parseFloat(ram()); c=parseFloat(storage()); d=parseFloat(cpu()); e=parseFloat(display());
-    _i('dtlsPrice').innerText=a*(globVarA+b+c+d+e);
-    //alert(globVarA + 'glob' + a + 'qnty' + b + 'ram' + c + 'storage' + d + 'cpu' + e + 'display');
 }
 
 
