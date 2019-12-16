@@ -33,7 +33,16 @@ function customize()
     _i('dtlsPrice').innerText = globVarA;
     _f('dtls')[0].value=1;
     for(c=0; c<_f('dtls').length; c++){_f('dtls')[c].addEventListener('change', dtlChange);}
-    //console.log(this.parentNode.children);
+    _i('buyBtn').addEventListener('click',function(){
+        alert("Grand Tota:Ksh "+d);
+        if(true){
+        confirm("Do you want it delivered? Remember that cost depend on location");
+            prompt('Enter location');
+            alert(' Delivery will be made soon. Thank you for using our services.');
+            return 0;}
+        
+    
+    });
 }
 function dtlChange()
 {
@@ -42,10 +51,7 @@ function dtlChange()
     _i('dtlsPrice').innerText=a*(globVarA+b+c+d+e);
     //alert(globVarA + 'glob' + a + 'qnty' + b + 'ram' + c + 'storage' + d + 'cpu' + e + 'display');
 }
-// function buy(){
-//     _i("buyBtn").addEventListener('click', function(){this.removeEventListener('click', customize);
-//     _i('dtls').style.display="none"; _i('buy').style.display="block";});
-// }
+
 
 function qnty()
 {
