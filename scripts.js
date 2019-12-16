@@ -42,10 +42,10 @@ function dtlChange()
     _i('dtlsPrice').innerText=a*(globVarA+b+c+d+e);
     //alert(globVarA + 'glob' + a + 'qnty' + b + 'ram' + c + 'storage' + d + 'cpu' + e + 'display');
 }
-function buy(){
-    _i("buyBtn").addEventListener('click', function(){this.removeEventListener('click', customize);
-    _i('dtls').style.display="none"; _i('buy').style.display="block";});
-}
+// function buy(){
+//     _i("buyBtn").addEventListener('click', function(){this.removeEventListener('click', customize);
+//     _i('dtls').style.display="none"; _i('buy').style.display="block";});
+// }
 
 function qnty()
 {
