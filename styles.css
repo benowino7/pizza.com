@@ -236,7 +236,23 @@ div#cart table tr td button {
     color: #f00;
     font: 900 1.4em sans-serif;
 }
-
-.buy{
-    
+h1,h2{
+    font-family: 'Girassol', cursive;
 }
+h3{
+    font-family: 'Playfair Display', serif; 
+}
+p{
+    font-family: 'Courier Prime', monospace;
+}
+.c4{
+    border: 1px solid white;
+}
+
+/* .buy{
+    font-family: 'Calistoga', cursive;
+font-family: 'Girassol', cursive;
+font-family: 'Courier Prime', monospace;
+font-family: 'Playfair Display', serif;
+
+} */
